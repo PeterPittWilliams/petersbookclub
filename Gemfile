@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.0'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -21,5 +19,14 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  #Sqlite3 is here to avoid issues pushing the site to Heroku
+  gem 'sqlite3'
+
+end
+
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
 end
 
