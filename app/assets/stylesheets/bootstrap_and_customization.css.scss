@@ -1,8 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
 
 $body-bg: #bdc3c7;
-$jumbotron-bg: #ecf0f1;
-$navbar-default-bg: #f1c40f;
+$font-family-sans-serif: 'Lato';
+$navbar-default-bg: #2c3e50;
+$navbar-default-link-color: #FFF;
+$navbar-default-link-hover-color: yellow;
+$navbar-height: 50px;
+$jumbotron-bg: #34495e;
+$jumbotron-color: #FFF;
+$label-link-hover-color: yellow;
 
+#thumbnail{
+    position:relative;
+}
+
+#thumbnail h1 {
+	font-size: 5vw;
+	color:white;
+}
+#thumbnail p {
+	font-size: 3vw;
+	color:white;
+}
+
+.left p{
+	text-align: justify;
+}
+
+.left h2{
+	text-align:left;
+}
+
+
+.post-content {
+ 	left:0;
+ 	right:0;
+ 	top:45%;
+ 	width: 100%;
+ 
+    position: absolute;
+
+}
 
 @import 'bootstrap';
 
